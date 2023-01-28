@@ -1,0 +1,21 @@
+img {
+    width: 7.5rem;
+    height: 10rem;
+    background-color: gray;
+    border: black 2px solid;
+}
+
+.CV-profile {
+    grid-column: 2/3;
+    padding: 2rem;
+}
+
+.CV-username {
+    font-size: 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+
+.CV-job-title{
+    font-size: 1.5rem;
+}

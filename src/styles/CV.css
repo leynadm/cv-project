@@ -1,0 +1,29 @@
+.CV-page{
+    display: grid;
+     
+    grid-template-columns: 0.5fr 3.5fr 6fr;
+     
+    grid-template-areas: 
+    "first second-zero third"
+    "first second-one third"
+    "first second-two third"
+    "first second-three third"
+    "first second-four third";
+    
+    width: 21cm;
+    height: 29.7cm;
+    background-color:antiquewhite;
+}
+
+.CV-page .first{
+    grid-area: first;
+    background-color:lightgrey;
+}
+
+  
+
+/* 
+@page {
+    size: A4 portrait;
+}
+ */
