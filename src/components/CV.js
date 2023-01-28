@@ -4,6 +4,8 @@ import '../styles/CV.css';
 import CVProfile from "./CV-Profile";
 import CVPersonalInfo from "./CV-PersonalInfo";
 import CVDigitalSkills from "./CV-DigitalSkills";
+import CVEducation from "./CV-Education";
+import CVLanguages from "./CV-Languages";
 
 class CV extends Component{
 
@@ -15,6 +17,8 @@ class CV extends Component{
                 <CVProfile/>
                 <CVPersonalInfo/>
                 <CVDigitalSkills/>
+                <CVEducation/>
+                <CVLanguages/>
             </div>
         )
     }

@@ -1,17 +1,17 @@
-.CV-digital-skills{
+.CV-languages{
     grid-column: 2/3;
 }
 
-.CV-digital-skills-field{
+.CV-languages-field{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.CV-header-digital-skills{
+.CV-header-languages{
     font-weight: 500;
     font-size: 1.5rem;
-    /* 
+/* 
     text-decoration: overline underline;
-     */
+ */
 }

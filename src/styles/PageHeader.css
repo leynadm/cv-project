@@ -1,4 +1,39 @@
 .page-header{
-    background-color: blue;
-    color: orangered;
+    display: flex;
+    background-color:mediumslateblue;
+    border-radius: 0.15rem;
+    color: white;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+.page-logo{
+    width: 3rem;
+    height: 3rem;
+    pointer-events: none;
+    border-radius: 25rem;
 }
+
+.page-header-title{
+    padding-left: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+@keyframes page-logo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .page-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+

@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import '../styles/PageHeader.css';
+import reactLogo from "../images/logo.svg"
 
 class PageHeader extends Component{
 
@@ -8,7 +9,8 @@ class PageHeader extends Component{
 
         return(
             <div className="page-header">
-                My Test
+                <img src={reactLogo} alt="react logo" className="page-logo"></img>
+                <div className="page-header-title">CV cREACTor</div>
             </div>
         )
     }

@@ -9,8 +9,8 @@ class CVProfile extends Component{
         return(
             <div className="CV-profile">
                 <img src={profileImage} className="CV-profile-image" alt="default user"></img>
-                <div className="CV-username">Daniel Matei</div>
-                <div className="CV-job-title">Software Engineer</div>
+                <input className="CV-username" placeholder="Your name here"></input>
+                <input className="CV-job-title" placeholder="Your current role here"></input>
             </div>
         )
     }

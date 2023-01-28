@@ -12,15 +12,13 @@
     
     width: 21cm;
     height: 29.7cm;
-    background-color:antiquewhite;
+    background-color:white;
 }
 
 .CV-page .first{
     grid-area: first;
     background-color:lightgrey;
 }
-
-  
 
 /* 
 @page {
