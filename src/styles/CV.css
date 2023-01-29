@@ -4,11 +4,11 @@
     grid-template-columns: 0.5fr 3.5fr 6fr;
      
     grid-template-areas: 
-    "first second-zero third"
-    "first second-one third"
-    "first second-two third"
-    "first second-three third"
-    "first second-four third";
+    "first second third"
+    "first second third"
+    "first second third"
+    "first second third"
+    "first second third";
     
     width: 21cm;
     height: 29.7cm;
@@ -18,6 +18,16 @@
 .CV-page .first{
     grid-area: first;
     background-color:lightgrey;
+}
+
+.CV-page .third{
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.CV-page .second {
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
 
 /* 

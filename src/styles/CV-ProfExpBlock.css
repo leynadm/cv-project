@@ -1,0 +1,22 @@
+.CV-prof-exp-block-header{
+    display: flex;
+}
+
+.CV-prof-exp-block{
+    grid-column: 3/4;
+    margin-bottom: 1rem;
+}
+
+.CV-prof-exp-role{
+    text-align: end;
+    font-weight: bold;
+}
+
+.CV-prof-exp-company-name{
+    text-align: start;
+    font-style: italic;
+}
+
+.CV-prof-exp-block-task{
+
+}

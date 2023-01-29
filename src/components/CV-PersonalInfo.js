@@ -5,7 +5,9 @@ import '../styles/CV-PersonalInfo.css';
 class CVPersonalInfo extends Component{
 
     render(){
+
         return(
+
             <div className="CV-personal-info">
                 <div>
                     <hr></hr>
@@ -22,8 +24,10 @@ class CVPersonalInfo extends Component{
                     <span className="material-symbols-outlined">alternate_email</span><input type="text" placeholder="Add your email address"></input>
                 </div>
                 <div className="CV-personal-info-field">
-                   <span><iconify-icon icon="mdi:linkedin"></iconify-icon></span><input type="text" placeholder="Add your LinkedIn"></input>
+                   <span><i className="fa fa-linkedin-square" style={{fontSize: '24px'}}></i></span><input type="text" placeholder="Add your LinkedIn"></input>
                 </div>
+
+                
             </div>
         )
     }

@@ -1,0 +1,10 @@
+.CV-prof-exp-comp{
+    grid-column: 3/4;   
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.CV-prof-exp-header{
+    font-weight: 500;
+    font-size: 1.5rem;
+}

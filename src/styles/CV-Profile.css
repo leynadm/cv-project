@@ -7,7 +7,7 @@ img {
 
 .CV-profile {
     grid-column: 2/3;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .CV-username {
@@ -19,3 +19,4 @@ img {
 .CV-job-title{
     font-size: 1.5rem;
 }
+
