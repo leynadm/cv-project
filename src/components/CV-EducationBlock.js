@@ -14,11 +14,14 @@ class CVEducationBlock extends Component {
           <input type="date" className="CV-education-start-date"></input>
           <input type="date" className="CV-education-end-date"></input>
         </div>
-        <input
-          type="text"
-          className="CV-education-specialization"
-          placeholder="Studies specialization"
-        ></input>
+        <div className="CV-education-specialization-comp">
+          <span class="material-symbols-outlined">arrow_right</span>
+          <input
+            type="text"
+            className="CV-education-specialization"
+            placeholder="Studies specialization"
+          ></input>
+        </div>
       </div>
     );
   }

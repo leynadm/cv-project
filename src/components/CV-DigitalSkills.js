@@ -13,7 +13,7 @@ class CVDigitalSkills extends Component {
     
     handleClick = () => {
       this.setState(prevState => ({
-        inputFields: [...prevState.inputFields, <input type="text" placeholder="Add your skill" />]
+        inputFields: [...prevState.inputFields, <input type="text" placeholder="You can add your skill here" />]
       }));
     };
   

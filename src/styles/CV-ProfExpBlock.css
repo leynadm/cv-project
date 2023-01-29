@@ -17,16 +17,35 @@
     font-style: italic;
 }
 
-.CV-prof-exp-block-task{
-
-}
-
-.CV-prof-exp-block-btn{
-    
-}
-
 .CV-prof-exp-block-btn-comp{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.CV-prof-exp-comma{
+    font-weight: bold;
+}
+
+.CV-prof-exp-block-header{
+    display: flex;
+    justify-content: center;
+}
+
+.CV-prof-exp-block-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CV-prof-exp-block-field input {
+    width: 75%;
+}
+
+textarea{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
 }

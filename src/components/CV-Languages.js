@@ -13,7 +13,7 @@ class CVLanguages extends Component {
     
     handleClick = () => {
       this.setState(prevState => ({
-        inputFields: [...prevState.inputFields, <input type="text" />]
+        inputFields: [...prevState.inputFields, <input type="text" placeholder="Add your spoken language" />]
       }));
     };
   
