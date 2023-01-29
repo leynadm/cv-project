@@ -7,7 +7,6 @@ class CVProfExpBlock extends Component {
 
     this.state = {
       inputFields: [],
-      inputHeight: 21,
     };
   }
 
@@ -25,9 +24,14 @@ class CVProfExpBlock extends Component {
     }));
   };
 
-  handleDelete = () => {
-    console.log("yes");
+  handleDelete = index => {
+    this.setState(prevState => {
+      const inputFields = [...prevState.inputFields];
+      inputFields.splice(index, 1);
+      return { inputFields };
+    });
   };
+
 
   render() {
     return (

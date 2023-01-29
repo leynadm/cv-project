@@ -5,9 +5,13 @@
   font-family: 'Barlow Condensed', sans-serif;
   display: grid;
   justify-content: center;
-  background-color: antiquewhite;
+  width: 100vw;
+  max-width: 100%;
 }
 
+body{
+  background-color: antiquewhite;
+}
 
 @keyframes App-logo-spin {
   from {

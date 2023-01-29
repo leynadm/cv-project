@@ -2,6 +2,10 @@
     grid-column: 2/3;
 }
 
+.CV-personal-info input{
+    width: 75%;
+}
+
 .CV-header-personal-info{
     font-weight: 500;
     font-size: 1.5rem;
