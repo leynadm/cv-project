@@ -22,11 +22,14 @@ class CVProfExp extends Component {
     return (
       <div className="CV-prof-exp-comp">
         <hr></hr>
+        <div className="CV-prof-exp-header-comp">
         <div className="CV-prof-exp-header">PROFESSIONAL EXPERIENCE</div>
-        <hr></hr>
         <button type="button" onClick={this.handleClick}>
           <span className="material-symbols-outlined">add_circle</span>
         </button>
+        </div>
+        <hr></hr>
+
 
         {this.state.inputFields.map((input,index)=>(
 

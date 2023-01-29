@@ -3,9 +3,12 @@
 }
 
 .CV-education-header{
- /* 
-    text-decoration: overline underline;
- */ 
     font-weight: 500;
     font-size: 1.5rem;
+}
+
+.CV-education-header-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -39,10 +39,12 @@ class CVProfExpBlock extends Component {
           <input type="date" className="CV-prof-exp-start-date"></input>
           <input type="date" className="CV-prof-exp-end-date"></input>
         </div>
-
-        <button type="button" onClick={this.handleClick}>
-          <span className="material-symbols-outlined">add_circle</span>
-        </button>
+        
+        <div className="CV-prof-exp-block-btn-comp">
+            <button type="button" onClick={this.handleClick}>
+                <span className="material-symbols-outlined">add_circle</span>
+            </button>
+        </div>
 
         {this.state.inputFields.map((input, index) => (
           <div key={index} className="CV-digital-skills-field">

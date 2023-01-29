@@ -11,31 +11,29 @@ class CVEducation extends Component {
     };
   }
 
-  handleClick = () =>{
-    this.setState(prevState => ({
-        inputFields: [...prevState.inputFields, CVEducationBlock]
-    }))
-  }
+  handleClick = () => {
+    this.setState((prevState) => ({
+      inputFields: [...prevState.inputFields, CVEducationBlock],
+    }));
+  };
 
   render() {
     return (
       <div className="CV-education">
         <div>
           <hr></hr>
+          <div className="CV-education-header-comp">
             <div className="CV-education-header">EDUCATION</div>
+            <button type="button" onClick={this.handleClick}>
+              <span className="material-symbols-outlined">add_circle</span>
+            </button>
+          </div>
           <hr></hr>
         </div>
-         
-        <button type="button" onClick={this.handleClick}>
-          <span className="material-symbols-outlined">add_circle</span>
-        </button>
-        {this.state.inputFields.map((input,index)=>(
 
-            <CVEducationBlock/>
-            
+        {this.state.inputFields.map((input, index) => (
+          <CVEducationBlock />
         ))}
-
-
       </div>
     );
   }

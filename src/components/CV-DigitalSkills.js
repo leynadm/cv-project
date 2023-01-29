@@ -28,14 +28,18 @@ class CVDigitalSkills extends Component {
     render() {
       return (
         <div className="CV-digital-skills">
-          <div>
+          
           <hr></hr>
+          <div className="CV-digital-skills-header-comp">
+          
           <div className="CV-header-digital-skills">DIGITAL SKILLS</div>
-          <hr></hr>
-          </div>
           <button type="button" onClick={this.handleClick}>
             <span className="material-symbols-outlined">add_circle</span>
           </button>
+          </div>
+          
+          <hr></hr>
+          
           
           {this.state.inputFields.map((input, index) => (
 

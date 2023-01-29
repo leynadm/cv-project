@@ -31,13 +31,17 @@ class CVLanguages extends Component {
         
         <div>
             <hr></hr>
-                <div className="CV-header-languages">LANGUAGES</div>
+          
+                <div className="CV-header-languages-comp">
+                  <div className="CV-header-languages">LANGUAGES</div>
+                  <button type="button" onClick={this.handleClick}>
+            <span className="material-symbols-outlined">add_circle</span>
+          </button>                
+                </div>
             <hr></hr>
           </div>
           
-          <button type="button" onClick={this.handleClick}>
-            <span className="material-symbols-outlined">add_circle</span>
-          </button>
+
           
           {this.state.inputFields.map((input, index) => (
 
