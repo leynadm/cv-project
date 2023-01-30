@@ -40,6 +40,24 @@ button{
     align-items: center;
 }
 
+.showButtons{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideButtons{
+    visibility: hidden;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .material-symbols-outlined{
     margin-right: 1rem;
 }

@@ -18,13 +18,16 @@ class CVEducation extends Component {
   };
 
   render() {
+
+    const { currentClass } = this.props;
+    
     return (
       <div className="CV-education">
         <div>
           <hr></hr>
           <div className="CV-education-header-comp">
             <div className="CV-education-header">EDUCATION</div>
-            <button type="button" onClick={this.handleClick}>
+            <button type="button" className={currentClass} onClick={this.handleClick}>
               <span className="material-symbols-outlined">add_circle</span>
             </button>
           </div>

@@ -19,12 +19,14 @@ class CVProfExp extends Component {
   };
 
   render() {
+    const { currentClass } = this.props
+
     return (
       <div className="CV-prof-exp-comp">
         <hr></hr>
         <div className="CV-prof-exp-header-comp">
         <div className="CV-prof-exp-header">PROFESSIONAL EXPERIENCE</div>
-        <button type="button" onClick={this.handleClick}>
+        <button type="button" className={currentClass} onClick={this.handleClick}>
           <span className="material-symbols-outlined">add_circle</span>
         </button>
         </div>
@@ -33,7 +35,7 @@ class CVProfExp extends Component {
 
         {this.state.inputFields.map((input,index)=>(
 
-            <CVProfExpBlock/>
+            <CVProfExpBlock currentClass={currentClass}/>
         ))}
 
       </div>

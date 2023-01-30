@@ -26,6 +26,9 @@ class CVLanguages extends Component {
     };
   
     render() {
+      
+      const { currentClass } = this.props;
+
       return (
         <div className="CV-languages">
         
@@ -34,7 +37,7 @@ class CVLanguages extends Component {
           
                 <div className="CV-header-languages-comp">
                   <div className="CV-header-languages">LANGUAGES</div>
-                  <button type="button" onClick={this.handleClick}>
+                  <button type="button" className={currentClass} onClick={this.handleClick}>
             <span className="material-symbols-outlined">add_circle</span>
           </button>                
                 </div>
@@ -50,9 +53,11 @@ class CVLanguages extends Component {
                 {input}
                 <button
                     type="button"
+                    className={currentClass}
                     onClick={() => this.handleDelete(index)}
                 >
                     <span className="material-symbols-outlined">delete</span>
+
                 </button>
                 </div>
             

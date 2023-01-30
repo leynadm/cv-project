@@ -34,6 +34,9 @@ class CVProfExpBlock extends Component {
 
 
   render() {
+
+    const { currentClass } = this.props
+
     return (
       <div className="CV-prof-exp-block">
         <div className="CV-prof-exp-block-header">
@@ -55,7 +58,7 @@ class CVProfExpBlock extends Component {
         </div>
 
         <div className="CV-prof-exp-block-btn-comp">
-          <button type="button" onClick={this.handleClick}>
+          <button type="button" className={currentClass} onClick={this.handleClick}>
             <span className="material-symbols-outlined">add_circle</span>
           </button>
         </div>
@@ -66,7 +69,7 @@ class CVProfExpBlock extends Component {
               check_indeterminate_small
             </span>
             {input}
-            <button type="button" onClick={() => this.handleDelete(index)}>
+            <button type="button" className={currentClass} onClick={() => this.handleDelete(index)}>
               <span className="material-symbols-outlined">delete</span>
             </button>
           </div>

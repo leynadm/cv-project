@@ -5,8 +5,10 @@ import reactLogo from "../images/logo.svg";
 import '../styles/CV.css';
 
 class PageHeader extends Component {
+
   previewCV = () => {
-    
+    console.log('time to rerender')
+    this.props.handlePreview();
   };
 
   render() {
