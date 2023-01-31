@@ -19,7 +19,7 @@
 
 .CV-page .first{
     grid-area: first;
-    background-color:lightgrey;
+    background-color:lightblue;
 }
 
 .CV-page .third{
@@ -56,6 +56,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    resize: none;
 }
 
 .material-symbols-outlined{
@@ -78,4 +79,5 @@ input{
 @page {
     size: A4 portrait;
 }
+
 

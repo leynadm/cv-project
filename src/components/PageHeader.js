@@ -23,14 +23,14 @@ class PageHeader extends Component {
           className="page-header-buttons"
           title="Preview your CV before saving"
         >
-          <button type="button" onMouseEnter={this.previewCV}>
+          <button type="button" className="preview-btn" onClick={this.previewCV}>
             <span className="material-symbols-outlined preview-btn">
               preview
             </span>
           </button>
 
-          <button type="button" title="Save your CV">
-            <span className="material-symbols-outlined save-btn">save</span>
+          <button type="button" className="btn-save" title="Save your CV">
+            <span className="material-symbols-outlined">save</span>
           </button>
         </div>
       </div>

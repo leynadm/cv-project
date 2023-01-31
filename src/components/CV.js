@@ -15,6 +15,7 @@ class CV extends Component {
 
     this.state = {
       currentClass: 'showButtons',
+      textareaClass: 'showTextarea'
     };
   }
 
@@ -22,21 +23,22 @@ class CV extends Component {
     console.log(this.state)
     this.setState((prevState) => ({
         currentClass: prevState.currentClass === 'showButtons' ? 'hideButtons' : 'showButtons',
+        textareaClass: prevState.textareaClass === 'showTextarea' ? 'hideTextarea' : 'showTextarea'
       }));
-
   };
 
   render() {
 
-    const { currentClass } = this.state;
-
+    const { currentClass, textareaClass } = this.state;
+    console.log('logging state inside CV: ')
+    console.log(this.state)
     return (
       <div>
         <PageHeader handlePreview={this.handlePreview} />
         <div className="CV-page">
           <div className="first"></div>
           <CVProfile />
-          <CVProfExp currentClass={currentClass} />
+          <CVProfExp currentClass={currentClass} textareaClass={textareaClass}/>
           <CVPersonalInfo currentClass={currentClass}/>
           <CVDigitalSkills currentClass={currentClass}/>
           <CVEducation currentClass={currentClass}/>

@@ -49,3 +49,7 @@ textarea{
     align-items: center;
     width: 75%;
 }
+
+.hideTextarea{
+    resize: none;
+}

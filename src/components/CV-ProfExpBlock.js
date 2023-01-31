@@ -11,32 +11,31 @@ class CVProfExpBlock extends Component {
   }
 
   handleClick = () => {
+    const { currentClass, textareaClass } = this.props;
     this.setState((prevState) => ({
       inputFields: [
         ...prevState.inputFields,
         <textarea
           type="text"
-          className="CV-prof-exp-block-task"
+          className={textareaClass}
           placeholder="Add your role tasks (you can resize this box)"
-        
         />,
       ],
     }));
   };
 
-  handleDelete = index => {
-    this.setState(prevState => {
+  handleDelete = (index) => {
+    this.setState((prevState) => {
       const inputFields = [...prevState.inputFields];
       inputFields.splice(index, 1);
       return { inputFields };
     });
   };
 
-
   render() {
-
-    const { currentClass } = this.props
-
+    const { currentClass, textareaClass } = this.props;
+    console.log('logging props inside profExpBlock: ')
+    console.log(this.props)
     return (
       <div className="CV-prof-exp-block">
         <div className="CV-prof-exp-block-header">
@@ -58,7 +57,11 @@ class CVProfExpBlock extends Component {
         </div>
 
         <div className="CV-prof-exp-block-btn-comp">
-          <button type="button" className={currentClass} onClick={this.handleClick}>
+          <button
+            type="button"
+            className={currentClass}
+            onClick={this.handleClick}
+          >
             <span className="material-symbols-outlined">add_circle</span>
           </button>
         </div>
@@ -68,8 +71,20 @@ class CVProfExpBlock extends Component {
             <span className="material-symbols-outlined">
               check_indeterminate_small
             </span>
-            {input}
-            <button type="button" className={currentClass} onClick={() => this.handleDelete(index)}>
+            <textarea
+              type="text"
+              /* 
+          className="CV-prof-exp-block-task"
+           */
+              className={textareaClass}
+              placeholder="Add your role tasks (you can resize this box)"
+            />
+            
+            <button
+              type="button"
+              className={currentClass}
+              onClick={() => this.handleDelete(index)}
+            >
               <span className="material-symbols-outlined">delete</span>
             </button>
           </div>
