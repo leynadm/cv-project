@@ -8,13 +8,7 @@ import CVEducation from "./CV-Education";
 import CVLanguages from "./CV-Languages";
 import CVProfExp from "./CV-ProfExp";
 
-
 class CV extends Component {
-  constructor(props){
-    super(props);
-
-    console.log(props)
-  }
 
   render() {
 
@@ -29,6 +23,7 @@ class CV extends Component {
           <CVDigitalSkills currentClass={currentClass}/>
           <CVEducation currentClass={currentClass}/>
           <CVLanguages currentClass={currentClass}/>
+          
         </div>
       
     );

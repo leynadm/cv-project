@@ -62,10 +62,7 @@ class PageHeader extends Component {
               preview
             </span>
           </button>
-        
-          <button type="button" className="btn-save" onClick={this.generateImage} title="Save your CV">
-            <span className="material-symbols-outlined">save</span>
-          </button>
+      
         </div>
       </div>
     );
@@ -73,3 +70,6 @@ class PageHeader extends Component {
 }
 
 export default PageHeader;
+
+
+

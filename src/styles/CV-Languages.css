@@ -1,19 +1,19 @@
-.CV-languages{
+.CV-languages {
     grid-column: 2/3;
 }
 
-.CV-languages-field{
+.CV-languages-field {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.CV-header-languages{
+.CV-header-languages {
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.CV-header-languages-comp{
+.CV-header-languages-comp {
     display: flex;
     justify-content: center;
     align-items: center;

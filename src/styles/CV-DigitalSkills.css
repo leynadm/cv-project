@@ -1,24 +1,20 @@
-.CV-digital-skills{
+.CV-digital-skills {
     grid-column: 2/3;
 }
 
-.CV-digital-skills-field{
+.CV-digital-skills-field {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.CV-header-digital-skills{
+.CV-header-digital-skills {
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.CV-digital-skills-header-comp{
+.CV-digital-skills-header-comp {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.CV-digital-skills input {
-
+    justify-content: center;
 }

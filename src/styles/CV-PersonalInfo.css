@@ -22,3 +22,7 @@
     padding: 0.25rem;
 }
 
+.CV-personal-info-header-comp{
+    display: flex;
+    justify-content: center;
+}

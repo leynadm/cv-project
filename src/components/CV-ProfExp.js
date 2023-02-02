@@ -21,8 +21,6 @@ class CVProfExp extends Component {
   render() {
     const { currentClass, textareaClass } = this.props;
     
-    console.log('logging props inside ProfExp: ')
-    console.log(this.props)
     return (
       <div className="CV-prof-exp-comp">
         <hr></hr>

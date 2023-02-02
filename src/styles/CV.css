@@ -88,13 +88,7 @@ input{
         padding: 0 !important;
         overflow: hidden;
     }
-
-    .category-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    
 }
 
 
