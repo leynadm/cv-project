@@ -35,7 +35,7 @@ class CVLanguages extends Component {
         <div>
             <hr></hr>
           
-                <div className="CV-header-languages-comp">
+                <div className="CV-header-languages-comp category-header">
                   <div className="CV-header-languages">LANGUAGES</div>
                   <button type="button" className={currentClass} onClick={this.handleClick}>
             <span className="material-symbols-outlined">add_circle</span>

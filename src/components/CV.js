@@ -7,34 +7,20 @@ import CVDigitalSkills from "./CV-DigitalSkills";
 import CVEducation from "./CV-Education";
 import CVLanguages from "./CV-Languages";
 import CVProfExp from "./CV-ProfExp";
-import PageHeader from "./PageHeader";
+
 
 class CV extends Component {
-  constructor(props) {
+  constructor(props){
     super(props);
 
-    this.state = {
-      currentClass: 'showButtons',
-      textareaClass: 'showTextarea'
-    };
+    console.log(props)
   }
-
-  handlePreview = () => {
-    console.log(this.state)
-    this.setState((prevState) => ({
-        currentClass: prevState.currentClass === 'showButtons' ? 'hideButtons' : 'showButtons',
-        textareaClass: prevState.textareaClass === 'showTextarea' ? 'hideTextarea' : 'showTextarea'
-      }));
-  };
 
   render() {
 
-    const { currentClass, textareaClass } = this.state;
-    console.log('logging state inside CV: ')
-    console.log(this.state)
+    const { currentClass, textareaClass } = this.props;
     return (
-      <div>
-        <PageHeader handlePreview={this.handlePreview} />
+      
         <div className="CV-page">
           <div className="first"></div>
           <CVProfile />
@@ -44,7 +30,7 @@ class CV extends Component {
           <CVEducation currentClass={currentClass}/>
           <CVLanguages currentClass={currentClass}/>
         </div>
-      </div>
+      
     );
   }
 }

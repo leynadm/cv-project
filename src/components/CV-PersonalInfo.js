@@ -9,11 +9,13 @@ class CVPersonalInfo extends Component{
         return(
 
             <div className="CV-personal-info">
-                <div>
+                
+                <div className="CV-personal-info-header-comp category-header">
                     <hr></hr>
                     <div className="CV-header-personal-info">PERSONAL INFO</div>
                     <hr></hr>
                 </div>
+
                 <div className="CV-personal-info-field">
                     <span className="material-symbols-outlined">call</span><input type="text" placeholder="Add your phone number"></input>
                 </div>

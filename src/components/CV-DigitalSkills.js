@@ -9,6 +9,7 @@ class CVDigitalSkills extends Component {
     this.state = {
       inputFields: [],
     };
+    
   }
 
   handleClick = () => {
@@ -35,7 +36,7 @@ class CVDigitalSkills extends Component {
     return (
       <div className="CV-digital-skills">
         <hr></hr>
-        <div className="CV-digital-skills-header-comp">
+        <div className="CV-digital-skills-header-comp category-header">
           <div className="CV-header-digital-skills">DIGITAL SKILLS</div>
           <button type="button" className={currentClass} onClick={this.handleClick}>
             <span className="material-symbols-outlined">add_circle</span>

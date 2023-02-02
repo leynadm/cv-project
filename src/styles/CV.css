@@ -13,8 +13,6 @@
     width: 21cm;
     height: 29.7cm;
     background-color:white;
-    box-shadow: 0px 1px 7px 4px gray;
-
 }
 
 .CV-page .first{
@@ -25,7 +23,8 @@
 .CV-page .third{
     grid-row-start: 1;
     grid-row-end: 5;
-}
+}box-shadow: 0px 1px 7px 4px gray;
+
 
 .CV-page .second {
     grid-row-start: 1;
@@ -78,6 +77,24 @@ input{
 
 @page {
     size: A4 portrait;
+}
+
+@media print{
+
+    body{
+        font-family:'Barlow Condensed', sans-serif;
+        height: 100vh; /* Use 100% here to support printing more than a single page*/
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+    .category-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 

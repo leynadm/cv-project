@@ -25,7 +25,7 @@ class CVEducation extends Component {
       <div className="CV-education">
         <div>
           <hr></hr>
-          <div className="CV-education-header-comp">
+          <div className="CV-education-header-comp category-header">
             <div className="CV-education-header">EDUCATION</div>
             <button type="button" className={currentClass} onClick={this.handleClick}>
               <span className="material-symbols-outlined">add_circle</span>
