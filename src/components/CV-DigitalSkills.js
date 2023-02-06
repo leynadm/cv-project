@@ -1,62 +1,52 @@
-import React from "react";
-import { Component } from "react";
+import React, { useState } from "react";
 import "../styles/CV-DigitalSkills.css";
 import uniqid from "uniqid";
 
-class CVDigitalSkills extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      inputFields: [],
-    };
-    
-  }
+function CVDigitalSkills({ currentClass }) {
+  const [inputFields, setInputFields] = useState([]);
 
-  handleClick = () => {
-    this.setState((prevState) => ({
-      inputFields: [
-        ...prevState.inputFields,
-        <input type="text" placeholder="You can add your skill here" />,
-      ],
-    }));
+  const handleClick = () => {
+    setInputFields([
+      ...inputFields,
+      <input type="text" placeholder="You can add your skill here" />,
+    ]);
   };
 
-  handleDelete = (index) => {
-    this.setState((prevState) => {
-      const inputFields = [...prevState.inputFields];
-      inputFields.splice(index, 1);
-      return { inputFields };
+  const handleDelete = (index) => {
+    setInputFields((prevInputFields) => {
+      const newInputFields = [...prevInputFields];
+      newInputFields.splice(index, 1);
+      return newInputFields;
     });
   };
 
-  render() {
+  return (
+    <div className="CV-digital-skills">
+      <hr></hr>
+      <div className="CV-digital-skills-header-comp category-header">
+        <div className="CV-header-digital-skills">DIGITAL SKILLS</div>
+        <button type="button" className={currentClass} onClick={handleClick}>
+          <span className="material-symbols-outlined">add_circle</span>
+        </button>
+      </div>
 
-    const { currentClass } = this.props;
+      <hr></hr>
 
-    return (
-      <div className="CV-digital-skills">
-        <hr></hr>
-        <div className="CV-digital-skills-header-comp category-header">
-          <div className="CV-header-digital-skills">DIGITAL SKILLS</div>
-          <button type="button" className={currentClass} onClick={this.handleClick}>
-            <span className="material-symbols-outlined">add_circle</span>
+      {inputFields.map((input, index) => (
+        <div key={index} className="CV-digital-skills-field">
+          <span className="material-symbols-outlined">done</span>
+          {input}
+          <button
+            type="button"
+            className={currentClass}
+            onClick={() => handleDelete(index)}
+          >
+            <span className="material-symbols-outlined">delete</span>
           </button>
         </div>
-
-        <hr></hr>
-
-        {this.state.inputFields.map((input, index) => (
-          <div key={index} className="CV-digital-skills-field">
-            <span className="material-symbols-outlined">done</span>
-            {input}
-            <button type="button" className={currentClass} onClick={() => this.handleDelete(index)}>
-              <span className="material-symbols-outlined">delete</span>
-            </button>
-          </div>
-        ))}
-      </div>
-    );
-  }
+      ))}
+    </div>
+  );
 }
 
 export default CVDigitalSkills;

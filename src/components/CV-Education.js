@@ -1,45 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Component } from "react";
 import "../styles/CV-Education.css";
 import CVEducationBlock from "./CV-EducationBlock";
 
-class CVEducation extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      inputFields: [],
-    };
-  }
+function CVEducation({ currentClass }) {
+  const [inputFields, setInputFields] = useState([]);
 
-  handleClick = () => {
-    this.setState((prevState) => ({
-      inputFields: [...prevState.inputFields, CVEducationBlock],
-    }));
+  const handleClick = () => {
+    setInputFields([...inputFields, CVEducationBlock]);
   };
 
-  render() {
-
-    const { currentClass } = this.props;
-    
-    return (
-      <div className="CV-education">
-        <div>
-          <hr></hr>
-          <div className="CV-education-header-comp category-header">
-            <div className="CV-education-header">EDUCATION</div>
-            <button type="button" className={currentClass} onClick={this.handleClick}>
-              <span className="material-symbols-outlined">add_circle</span>
-            </button>
-          </div>
-          <hr></hr>
+  return (
+    <div className="CV-education">
+      <div>
+        <hr></hr>
+        <div className="CV-education-header-comp category-header">
+          <div className="CV-education-header">EDUCATION</div>
+          <button type="button" className={currentClass} onClick={handleClick}>
+            <span className="material-symbols-outlined">add_circle</span>
+          </button>
         </div>
-
-        {this.state.inputFields.map((input, index) => (
-          <CVEducationBlock />
-        ))}
+        <hr></hr>
       </div>
-    );
-  }
+
+      {inputFields.map((input, index) => (
+        <CVEducationBlock />
+      ))}
+    </div>
+  );
 }
 
 export default CVEducation;
