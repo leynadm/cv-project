@@ -1,8 +1,42 @@
 import "./App.css";
-import React, { useRef, useState } from "react";
-import PageHeader from "./components/PageHeader";
-import CV from "./components/CV";
-import ReactToPrint from "react-to-print";
+import React, { useState } from "react";
+import CVSelection from "./components/CV-Selection";
+import CVSampleTwo from "./components/CV-Sample-Two";
+
+const App = () => {
+  const [selectedComponent, setSelectedComponent] = useState("Selection");
+
+  const handleClick = () => {
+    if (selectedComponent === "Selection") {
+      setSelectedComponent("CVSampleTwo");
+    } else {
+      setSelectedComponent("CVSelection");
+    }
+  };
+
+  console.log('Outputting state in App.js:')
+  console.log(selectedComponent)
+
+  return (
+    <div className="App">
+      {selectedComponent === "Selection" ? <CVSelection selectedComponent={selectedComponent} handleClick={handleClick} /> : <CVSampleTwo />}
+    </div>
+
+    /* 
+    <div>
+      {currentPage === <CVSampleTwo /> ? (
+        <CVSampleTwo onButtonClick={currentPage} />
+      ) : (
+        currentPage
+      )}
+    </div>
+     */
+  );
+}
+
+export default App;
+
+/* 
 
 function App(){
 
@@ -43,3 +77,4 @@ function App(){
 };
 
 export default App;
+ */

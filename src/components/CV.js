@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {forwardRef} from "react";
 import "../styles/CV.css";
 import CVProfile from "./CV-Profile";
 import CVPersonalInfo from "./CV-PersonalInfo";
@@ -7,9 +7,10 @@ import CVEducation from "./CV-Education";
 import CVLanguages from "./CV-Languages";
 import CVProfExp from "./CV-ProfExp";
 
-function CV({ currentClass, textareaClass }) {
+const CV = forwardRef((props,ref) => {
+  const {currentClass,textareaClass} = props
   return (
-    <div className="CV-page">
+    <div ref={ref} className="CV-page">
       <div className="first"></div>
       <CVProfile />
       <CVProfExp currentClass={currentClass} textareaClass={textareaClass} />
@@ -19,6 +20,6 @@ function CV({ currentClass, textareaClass }) {
       <CVLanguages currentClass={currentClass} />
     </div>
   );
-}
+});
 
 export default CV;

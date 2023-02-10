@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Component } from "react";
 import "../styles/CV-Education.css";
 import CVEducationBlock from "./CV-EducationBlock";
 
