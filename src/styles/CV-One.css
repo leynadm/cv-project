@@ -1,0 +1,14 @@
+.CV-one-page {
+    display: flex;
+    flex-direction: column;
+    width: 21cm;
+    height: 29.68cm;
+    background-color: white;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.CV-one-sides{
+    display: flex;
+}

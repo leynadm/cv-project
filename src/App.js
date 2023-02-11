@@ -2,37 +2,47 @@ import "./App.css";
 import React, { useState } from "react";
 import CVSelection from "./components/CV-Selection";
 import CVSampleTwo from "./components/CV-Sample-Two";
+import CVOne from "./components/CV-One";
 
 const App = () => {
   const [selectedComponent, setSelectedComponent] = useState("Selection");
 
-  const handleClick = () => {
-    if (selectedComponent === "Selection") {
-      setSelectedComponent("CVSampleTwo");
+  const handleClick = (chosenVersion) => {
+    if (chosenVersion === "Version 1") {
+      setSelectedComponent("CVOne");
+    } else if (chosenVersion === "Version 2") {
+      setSelectedComponent("CVTwo");
     } else {
-      setSelectedComponent("CVSelection");
+      setSelectedComponent("Selection");
     }
   };
 
-  console.log('Outputting state in App.js:')
-  console.log(selectedComponent)
+  console.log("Outputting state in App.js:");
+  console.log(selectedComponent);
 
-  return (
-    <div className="App">
-      {selectedComponent === "Selection" ? <CVSelection selectedComponent={selectedComponent} handleClick={handleClick} /> : <CVSampleTwo />}
-    </div>
-
-    /* 
-    <div>
-      {currentPage === <CVSampleTwo /> ? (
-        <CVSampleTwo onButtonClick={currentPage} />
-      ) : (
-        currentPage
-      )}
-    </div>
-     */
-  );
-}
+  if (selectedComponent === "Selection") {
+    return (
+      <div className="App">
+        <CVSelection
+          selectedComponent={selectedComponent}
+          handleClick={handleClick}
+        />
+      </div>
+    );
+  } else if (selectedComponent === "CVOne") {
+    return (
+      <div className="App">
+        <CVOne />
+      </div>
+    );
+  } else if (selectedComponent === "CVTwo") {
+    return (
+      <div className="App">
+        <CVSampleTwo />
+      </div>
+    );
+  }
+};
 
 export default App;
 

@@ -1,0 +1,16 @@
+.cv-one-languages-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-one-header-languages {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.cv-one-header-languages-comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

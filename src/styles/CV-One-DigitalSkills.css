@@ -1,0 +1,17 @@
+
+.cv-one-digital-skills-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-one-header-digital-skills {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.cv-one-digital-skills-header-comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

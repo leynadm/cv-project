@@ -1,0 +1,36 @@
+.cv-one-education{
+    grid-column: 2/3;
+}
+
+.cv-one-education-header{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.cv-one-education-header-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-one-education-specialization-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cv-one-education-institution-name{
+    text-align: center;
+    width: 90%;
+    font-weight: bold;
+}
+
+.cv-one-education-specialization{
+    width: 70%;
+
+}
+
+.cv-one-education-block{
+    padding-bottom: 1rem;
+}
