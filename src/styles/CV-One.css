@@ -1,6 +1,5 @@
 .CV-one-page {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     width: 21cm;
     height: 29.68cm;
     background-color: white;

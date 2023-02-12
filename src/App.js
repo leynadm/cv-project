@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import CVSelection from "./components/CV-Selection";
 import CVSampleTwo from "./components/CV-Sample-Two";
-import CVOne from "./components/CV-One";
+import CVSampleOne from "./components/CV-Sample-One";
 
 const App = () => {
   const [selectedComponent, setSelectedComponent] = useState("Selection");
@@ -32,7 +32,7 @@ const App = () => {
   } else if (selectedComponent === "CVOne") {
     return (
       <div className="App">
-        <CVOne />
+        <CVSampleOne />
       </div>
     );
   } else if (selectedComponent === "CVTwo") {
