@@ -1,4 +1,4 @@
-.CV-one-page {
+.cv-one-page {
     display: grid;
     width: 21cm;
     height: 29.68cm;
@@ -8,6 +8,6 @@
     align-items: center;
 }
 
-.CV-one-sides{
+.cv-one-sides{
     display: flex;
 }
