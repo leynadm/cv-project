@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/CV-ProfExp.css";
+import "../styles/CV-One-ProfExp.css";
 import CVProfExpBlock from "./CV-ProfExpBlock";
 
 const CVProfExp = (props) => {

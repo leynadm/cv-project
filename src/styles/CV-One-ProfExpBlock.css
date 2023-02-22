@@ -1,0 +1,55 @@
+.cv-one-prof-exp-block-header{
+    display: flex;
+}
+
+.cv-one-prof-exp-block{
+    grid-column: 3/4;
+    margin-bottom: 1rem;
+}
+
+.cv-one-prof-exp-role{
+    text-align: end;
+    font-weight: bold;
+}
+
+.cv-one-prof-exp-company-name{
+    text-align: start;
+    font-style: italic;
+}
+
+.cv-one-prof-exp-block-btn-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-one-prof-exp-comma{
+    font-weight: bold;
+}
+
+.cv-one-prof-exp-block-header{
+    display: flex;
+    justify-content: center;
+}
+
+.cv-one-prof-exp-block-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-one-prof-exp-block-field input {
+    width: 50%;
+}
+
+textarea{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hideTextarea{
+    resize: none;
+}

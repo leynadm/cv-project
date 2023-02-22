@@ -1,13 +1,22 @@
 .cv-one-page {
-    display: grid;
     width: 21cm;
     height: 29.68cm;
     background-color: white;
     margin: 0;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr;
 }
 
 .cv-one-sides{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cv-one-left-side{
     display: flex;
 }
+
+

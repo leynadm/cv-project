@@ -1,8 +1,16 @@
 .cv-one-description{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+}
+
+.cv-one-description-box{
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 textarea{
@@ -11,5 +19,10 @@ textarea{
     justify-content: center;
     align-items: center;
     width: 95%;
-    height: 5rem;
+    height: 4rem;
+}
+
+.cv-one-description-header{
+    font-weight: 500;
+    font-size: 1.25rem;
 }

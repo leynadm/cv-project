@@ -1,15 +1,42 @@
-import React from "react";
-import profileImage from "../images/cat.png";
+import React, { useState } from "react";
 import "../styles/CV-Profile.css";
+import { useDropzone, useDRopzone } from "react-dropzone";
 
 function CVProfile() {
+  const [image, setImage] = useState([]);
+
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+    accept: "image/",
+    onDrop: (acceptedFiles) => {
+      setImage(
+        acceptedFiles.map((upFile) =>
+          Object.assign(upFile, {
+            preview: URL.createObjectURL(upFile),
+          })
+        )
+      );
+    },
+  });
+
   return (
     <div className="CV-profile">
-      <img
-        src={profileImage}
-        className="CV-profile-image"
-        alt="default user"
-      ></img>
+      <div {...getRootProps()}>
+        <input {...getInputProps()} />
+        {isDragActive ? (
+          <p className="">Drop the image here...</p>
+        ) : (
+          <p className="">Drag 'n' drop image here</p>
+        )}
+      </div>
+      <div>
+        {image.map((upFile) =>{
+          return(
+            <div>
+              <img src={upFile.preview} alt="preview"/>
+            </div>
+          )
+        })}
+      </div>
       <input className="CV-username" placeholder="Your name here"></input>
       <input
         className="CV-job-title"
