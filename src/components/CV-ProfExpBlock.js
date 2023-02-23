@@ -60,7 +60,7 @@ function CVProfExpBlock({ currentClass, textareaClass }) {
         className="CV-prof-exp-block-task"
          */
             className={textareaClass}
-            placeholder="Add your role tasks (you can resize this box)"
+            placeholder="Add your role tasks"
           />
 
           <button
