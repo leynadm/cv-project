@@ -5,12 +5,12 @@
     justify-content: center;
     font-weight: 500;
     font-size: 1.25rem;
-
 }
 
 .cv-one-description-box{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Lato', sans-serif;
 }
 
 textarea{
